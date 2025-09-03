@@ -1,9 +1,11 @@
 useage guide : 
 
-- npm run server:build:watch
+- npm run server:build:watch : 
+
 This runs the TypeScript compiler in watch mode. It automatically recompiles your TypeScript files in src/ to JavaScript in build/ whenever you make changes. It does not run or start your server—just keeps your build up to date.
 
-- npm run server:inspect
+- npm run server:inspect : 
+  
 This starts the MCP Inspector, which launches your MCP server in a special mode that allows you to interact with it using the Inspector UI. It connects to your server via stdio, so you can use tools, resources, and prompts as intended.
 
 
@@ -12,10 +14,10 @@ This starts the MCP Inspector, which launches your MCP server in a special mode 
 
 - how mcp.json is coded : 
 
-Start a Node.js MCP server at build/server.js
-Run it in the project’s workspace folder
-Communicate via stdio
-Watch build/**/*.js during dev and enable Node debugging
+1. Start a Node.js MCP server at build/server.js
+2. Run it in the project’s workspace folder
+3. Communicate via stdio
+4. Watch build/**/*.js during dev and enable Node debugging
 
 - restart vs code and the restart your server to add resources to co-pilot context as it doesnt pick up directly.
 
