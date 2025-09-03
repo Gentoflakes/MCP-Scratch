@@ -12,25 +12,6 @@ This starts the MCP Inspector, which launches your MCP server in a special mode 
 
 - how mcp.json is coded : 
 
-{
-  "servers": {
-    "my-mcp-server-a81f235d": {
-      "type": "stdio",             // communicate via stdio
-      "command": "node",           // run with Node.js
-      "args": ["build/server.js"], // entrypoint file
-      "cwd": "${workspaceFolder}", // working directory
-      "dev": {
-        "watch": "build/**/*.js",  // auto-reload on changes
-        "debug": { "type": "node"} // debugging support
-      }
-    }
-  },
-  "inputs": [] // runtime inputs given by user.
-}
-
-
-What this means:
-
 Start a Node.js MCP server at build/server.js
 Run it in the project’s workspace folder
 Communicate via stdio
